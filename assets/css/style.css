@@ -1,10 +1,75 @@
 body {
-    position: relative;
-    overflow-x: hidden;
-    background-color: rgba(248,248,248,255);
+    background-color: rgba(248, 248, 248, 255);
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    height: 100%;
+    margin: 0;
 }
+.full {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    height: 100%;
+    width: 100%;
+}
+.sidebar {
+    /*background-color: brown;*/
+    flex-grow: 1;
+}
+.main {
+    /*display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;*/
+    flex-grow: 4;
+    background-color: rgba(248, 248, 248, 255);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-item {
+    display: block;
+    justify-content: stretch;
+    flex-basis: 100pt;
+}
+.main-item i {
+    box-shadow: inset;
+}
+.main-image {
+    background-color: #b0a0d8;
+    color: rgba(248, 248, 248, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200pt;
+    width: 200pt;
+    border-radius: 15pt;
+    margin: 20pt;
+}
+.profile-image {
+    max-height: 30pt;
+    width: 30pt;
+    object-fit: cover;
+    border-radius: 20pt;
+    margin: 5pt;
+}
+.user {
+    display: flex;
 
-main {
-    display:flex;
+    margin-top: 5pt;
+}
+.user-item {
+    padding: 5pt;
+}
+.user-item2 {
+    margin-left: auto;
+    padding: 10pt;
+}
+.chat {
+    padding: 15pt;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
